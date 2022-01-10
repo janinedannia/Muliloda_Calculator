@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Muliloda_Calculator</string>
+    <string name="bottom1">The Result is </string>
+    <string name="bottom2">Answer</string>
+    <string name="top1">First Variable</string>
+    <string name="top2">Second Variable</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">x</string>
+    <string name="divide">/</string>
+    <string name="equals">=</string>
+</resources>
