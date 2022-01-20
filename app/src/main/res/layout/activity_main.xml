@@ -17,15 +17,15 @@
         app:srcCompat="@drawable/en" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/editTxt2ndVar"
         android:layout_width="352dp"
         android:layout_height="58dp"
         android:ems="10"
         android:inputType="number"
         android:text="0.0"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="@+id/editTxt1stVar"
         app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTxt1stVar"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -38,59 +38,59 @@
         android:text="@string/top2"
         android:textColor="#2d533c"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintEnd_toEndOf="@+id/editTxt1stVar"
+        app:layout_constraintStart_toStartOf="@+id/editTxt1stVar"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt1stVar" />
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAdd"
         android:layout_width="77dp"
         android:layout_height="81dp"
         android:layout_marginTop="56dp"
         android:backgroundTint="#744343"
         android:text="@string/plus"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtract"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxt1stVar" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnSubtract"
         android:layout_width="77dp"
         android:layout_height="81dp"
         android:backgroundTint="#744343"
         android:text="@string/minus"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiply"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnMultiply"
         android:layout_width="77dp"
         android:layout_height="81dp"
         android:backgroundTint="#744343"
         android:text="@string/multiply"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivide"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/btnSubtract"
+        app:layout_constraintTop_toTopOf="@+id/btnSubtract" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnDivide"
         android:layout_width="77dp"
         android:layout_height="81dp"
         android:backgroundTint="#744343"
         android:text="@string/divide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
+        app:layout_constraintStart_toEndOf="@+id/btnMultiply"
+        app:layout_constraintTop_toTopOf="@+id/btnMultiply" />
 
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTxt1stVar"
         android:layout_width="352dp"
         android:layout_height="58dp"
         android:ems="10"
@@ -100,18 +100,27 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck" /><![CDATA[
+
+    "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    ]]>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="84dp"
         android:text="@string/top1"
         android:textColor="#2d533c"
-        android:textSize="20sp
-"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -124,13 +133,13 @@
         android:textColor="#dfd2b3"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/answerTxt"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/answerTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
@@ -145,7 +154,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnModulo"
         android:layout_width="117dp"
         android:layout_height="64dp"
         android:layout_marginTop="72dp"
@@ -153,7 +162,7 @@
         android:text="@string/equals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxt2ndVar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

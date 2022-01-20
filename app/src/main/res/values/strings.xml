@@ -8,5 +8,5 @@
     <string name="minus">-</string>
     <string name="multiply">x</string>
     <string name="divide">/</string>
-    <string name="equals">=</string>
+    <string name="equals">%</string>
 </resources>
