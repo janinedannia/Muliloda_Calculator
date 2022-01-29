@@ -20,15 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnAdd.setOnClickListener(this);
-        btnSubtract.setOnClickListener(this);
-        btnMultiply.setOnClickListener(this);
-        btnDivide.setOnClickListener(this);
-        btnModulo.setOnClickListener(this);
-
-        var1txt = findViewById(R.id.editTxt1stVar);
-        var2txt = findViewById(R.id.editTxt2ndVar);
-
         btnAdd = findViewById(R.id.btnAdd);
         btnSubtract = findViewById(R.id.btnSubtract);
         btnMultiply = findViewById(R.id.btnMultiply);
@@ -37,28 +28,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         answerTxt = findViewById(R.id.answerTxt);
 
-        variable1 = Double.parseDouble(String.valueOf(var1txt.getText()));
-        variable2 = Double.parseDouble(String.valueOf(var2txt.getText()));
+
+
+        btnAdd.setOnClickListener(this);
+        btnSubtract.setOnClickListener(this);
+        btnMultiply.setOnClickListener(this);
+        btnDivide.setOnClickListener(this);
+        btnModulo.setOnClickListener(this);
+
+
     }
 
     @Override
     public void onClick (View v) {
-        
+
+
+        var1txt = findViewById(R.id.editTxt1stVar);
+        var2txt = findViewById(R.id.editTxt2ndVar);
+
+        variable1 = Double.parseDouble(var1txt.getText().toString());
+        variable2 = Double.parseDouble(var2txt.getText().toString());
+
         switch(v.getId()) {
             case R.id.btnAdd:
-                answerTxt.setText(String.valueOf( variable1 + variable2 ));
+                answerTxt.setText(Double.toString(variable1 + variable2));
+
                 break;
             case R.id.btnSubtract:
-                answerTxt.setText(String.valueOf( variable1 - variable2 ));
+                answerTxt.setText(Double.toString(variable1 - variable2));
+
                 break;
             case R.id.btnMultiply:
-                answerTxt.setText(String.valueOf( variable1 * variable2 ));
+                answerTxt.setText(Double.toString(variable1 * variable2));
+
                 break;
             case R.id.btnDivide:
-                answerTxt.setText(String.valueOf( variable1 / variable2 ));
+                answerTxt.setText(Double.toString(variable1 / variable2));
+
                 break;
             case R.id.btnModulo:
-                answerTxt.setText(String.valueOf( variable1 % variable2 ));
+                answerTxt.setText(Double.toString(variable1 % variable2));
+
                 break;
         }
 
